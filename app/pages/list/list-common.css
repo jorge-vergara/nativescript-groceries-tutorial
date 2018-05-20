@@ -1,8 +1,8 @@
 .add-bar {
-  background-color: #CB1D00;
+  background-color: #cb1d00;
   padding: 5 10;
 }
-.add-bar Image {
+.add-bar image {
   height: 15;
   vertical-align: center;
   margin-left: 10;
@@ -10,4 +10,20 @@
 }
 TextField {
   color: white;
+}
+ListView {
+  opacity: 0;
+}
+.visible {
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
